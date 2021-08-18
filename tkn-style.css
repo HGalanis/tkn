@@ -1,0 +1,11 @@
+body {
+    font-family:Oxanium ;
+}
+
+.navbar .nav-link {
+    letter-spacing: 0.10em;
+}
+.navbar .nav-link:hover {
+    color: #000000!important;
+    text-shadow: 0 0 40px #00ffd5;
+}
