@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+  }
 body {
     font-family:Oxanium ;
 }
@@ -6,6 +9,36 @@ body {
     letter-spacing: 0.10em;
 }
 .navbar .nav-link:hover {
-    color: #000000!important;
+    color: #ffd000!important;
     text-shadow: 0 0 40px #00ffd5;
 }
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #c9caca;
+    margin-left: 0.5em;
+}
+.casillero:hover {
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 4px;
+    transition-timing-function:ease-in-out ;
+    transition-duration: .7s;
+}
+.casillero p {
+    color: rgb(218, 218, 218);
+margin-top: 0.5em;
+margin-left: 0.5em;
+padding-left: 2.2em;
+border-left: 1px solid #2f2f2f;
+}
+
+.term {
+    width:250px;
+    height: 250px;
+    border-radius: 100%;
+  }
+.term:hover h3 {
+    font-size: 1.6em;
+    transition: ease-in .25s;
+  }
+.img_term {width: 100%;height: auto;}
