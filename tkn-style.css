@@ -4,6 +4,9 @@ a {
 body {
     font-family:Oxanium ;
 }
+.luz {
+    color: #ffd000!important;
+}
 
 .navbar .nav-link {
     letter-spacing: 0.10em;
