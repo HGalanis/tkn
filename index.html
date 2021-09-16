@@ -14,6 +14,7 @@
 
   <!-- Custom styles for this template -->
   <link href="tkn-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;600&display=swap');
@@ -26,7 +27,7 @@
     <nav id="tkn_navbar" class="navbar navbar-expand-md navbar-dark bg-dark pt-5" aria-label="navbar">
       <div class="container">
 
-        <a class="navbar-brand m-auto d-md-none" href="#">TKNar2</a>
+        <a class="navbar-brand m-auto d-md-none luz" href="#">TKNar</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTKN"
           aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,23 +37,24 @@
         <div class="collapse navbar-collapse" id="navbarTKN">
           <ul class="navbar-nav me-start mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Whitepaper</a>
+              <a class="nav-link" href="#whitepaper">Whitepaper</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Glosario</a>
+              <a class="nav-link" href="#glosario">Glosario</a>
             </li>
           </ul>
 
           <a class="navbar-brand mx-auto mt-2 p-0 d-none d-md-block" href="#">
-            <h1 class="h3 m-0">TKNar</h1>
+            <!-- <img src="i/tkn_logo.png" width="60px"> -->
+            <h1 class="h3 m-0 luz">TKNar</h1>
           </a>
 
           <ul class="navbar-nav me-end mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Expansión</a>
+              <a class="nav-link" href="#expansion">Expansión</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
 
           </ul>
@@ -67,37 +69,38 @@
     <div class="row text-white bg-dark">
 
       <!-- Jumbo -->
-    <section class="">
-        <div id="carouselExampleControls" class="carousel slide rounded-3 shadow" data-bs-ride="carousel">
-          <div class="carousel-inner p-5 pb-2">
+    <section class="slides">
+        <div id="carouselExampleControls" class="carousel slide rounded-3 shadow m-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
       
-            <div class="carousel-item active" style="height: 240px;">
-              <div class="container">
+            <div id="slide_genesis" class="carousel-item p-5 active" style="min-height: 240px;">
+              <div class="container p-3">
                 <div class="row">
-                  <div class="col-3">
-                    <h1 class="display-5 ps-4"><b>TKN</b> Génesis</h1>
+                  <div class="col-12 text-center m-auto">
+                    <h1 class="display-5"><b>TKN</b> Génesis</h1>
                   </div>
-                  <div class="col-9">
-                    <p class="lead">TKN es un proyecto independiente que busca la formación de
-                      una comunidad de artistas digitales para la colaboracióo mutuo.</p>
-                      <span class="col-12"><button class="btn btn-outline-light mt-2 ms-3" type="button">Conocer Más</button>     </span>             
-
+                  <div class="col-8 text-center m-auto ">
+                    <p class="">TKN es un proyecto independiente que busca la formación de
+                      una comunidad de artistas digitales.</p>     
                   </div>
+                  <span class="col-12 text-center">
+                    <a class="btn btn-outline-light mt-2  text-center" href="/whitepaper.html" type="button">Conocer Más</a>    
+                  </span>   
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item" style="height: 240px;">
-              <div class="container">
+            <div id="slide_radar" class="carousel-item p-5" style="min-height: 240px;">
+              <div class="container p-3">
                 <div class="row">
-                  <div class="col-3">
-                    <h1 class="display-4 ps-4">RADar</h1>
+                  <div class="col-12 text-center m-auto">
+                    <h1 class="display-4">RADar</h1>
                   </div>
-                  <div class="col-9">
-                    <p class="lead">Estamos armando el directorio de artistas digitales
-                      más importante del país. Nos conocemos para reconocernos.
+                  <div class="col-8 text-center m-auto">
+                    <p class="">Estamos armando el directorio de artistas digitales<br>
+                      más importante del país.
                     </p>
-                    <button class="btn btn-light mt-2 ms-3" type="button" disabled>Disponible a partir del 18 de Septiembre 2021</button>                  
+                    <button class="btn btn-light mt-2" type="button">Pronto podrás registrarte</button>                  
                   </div>
                 </div>
               </div>
@@ -114,10 +117,9 @@
 
     <!-- Roadmap -->
     <section>
-      <div class="container-sm pt-md-5">
-        <h2 class="mt-5 pt-3 text-center"><i>Roadmap</i> · Fase 1 </h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 pb-5 m-md-5">
-        
+      <div class="container py-5">
+        <h2 class="p-5 text-center luz"><i>Roadmap</i> · Fase 1 </h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 pb-5 mb-5">
           <div class="col casillero d-flex align-items-start p-4">
             <div>
               <h4 class="fw-bold mb-0">1 · Desarrollo</h4>
@@ -160,29 +162,27 @@
     </section>
     
     <!-- Whitepaper -->
-<section class="p-0">
-  <div class="container-fluid bg-secondary p-5">
-    <div class="row">
-      <div class="col-12 pt-3 text-center">
-        <p class="col-12 text-center">
-          <span class="me-2"> Para conocer más de nuestro proyecto</span>
-          <button class="btn btn-outline-light py-3 px-4 m-auto" type="button">Descarga nuestro Whitepaper</button>
-        </p>
+    <section id="whitepaper" class="p-0">
+      <div class="container-fluid bg-secondary p-5">
+        <div class="row">
+          <div class="col-12 pt-3 text-center">
+            <p class="col-12 text-center">
+              <span class="me-2"> Para conocer más de nuestro proyecto</span>
+              <a class="btn btn-outline-light py-3 px-4 m-auto" type="button" href="/whitepaper.html">Leé nuestro Whitepaper</a>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Glosario -->
-    <section>
-      <div class="container py-5 my-5">
-        <h2 class="text-start pt-3 pb-5 visually-hidden">Glosario</h2>
+    <section id="glosario">
+      <div  class="container py-5 my-5">
         <div class="row">
-          <div class="col-md-12">
+          <div id="glosario_div" class="col-md-12">
             <div class="p-5 text-white shadow rounded-3">
-              <h2>Glosario</h2>
-              <p>Swap the background-color utility and add a color utility to mix up the jumbotron look.</p>
-                <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
+              <h2 class="text-center">Glosario</h2>
+                <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-2">
 
                  
 
@@ -190,7 +190,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-12 d-flex">
-                    <button class="btn btn-outline-light mt-5 m-auto" type="button">Más definiciones</button>
+                    <a class="btn btn-outline-light mt-5 m-auto"  href="https://feriadearte.cordoba.gob.ar/paisajes-tecnopoeticos/" target=_blank type="button">Ver más definiciones</a>
                   </div>
                 </div>
               </div>
@@ -198,25 +198,25 @@
           </div>
         </div>
       </div>
-</section>
+    </section>
 
 <!-- Expansión -->
-<section>
+<section id="expansion">
   <div class="container pb-5 my-5">
     <div class="row align-items-md-stretch gx-5">
       <div class="col-md-6">
         <div class="h-100 p-5 text-white shadow rounded-3">
-          <h2>Sponsor</h2>
-          <p>Si querés contribuir al proyecto podés ponerte en contacto con nosotros escribiendonos al siguiente
+          <h2 class="luz">Sponsor</h2>
+          <p class="text-white-50">Si querés contribuir al proyecto podés ponerte en contacto con nosotros escribiendonos al siguiente
             mail:
-            <span class="lead">ecosistema@tknar.ar</span>
+            <span class="lead-5 text-muted">ecosistema@tknar.ar</span>
           </p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5 text-white shadow rounded-3">
-          <h2>Crear Salas</h2>
-          <p>Crearemos salas temáticas para promover artistas seleccionados. Si sos galerista o trabajás con una galería, pronto podrás adquirir un espacio de exhibición.</p>
+          <h2 class="luz">Crear Salas</h2>
+          <p class="text-white-50">Crearemos salas temáticas para promover artistas seleccionados. Si sos galerista o trabajás con una galería, pronto podrás adquirir un espacio de exhibición.</p>
         </div>
       </div>
     </div>
@@ -224,14 +224,14 @@
 </section>
 
 <!-- Formulario-->
-<section>
-  <div class="my-5 p-5 text-dark text-center bg-light border-bottom">
+<section id="section_form">
+  <div class="my-5 p-5 text-light text-center">
     <h1 class="display-5 fw-bold p-5 pb-2">Estamos armando <br> el directorio de artistas digitales <br> más
       importante del país</h1>
     <div class="col-lg-8 mx-auto">
-      <p class="text-muted mb-4">Podrás registrarte a partir del 18 de Septiembre 2021  .</p>
+      <p class="text-light mb-3 lead fw-bold">El registro estará disponible a partir del 18 de Septiembre de 2021</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button class="btn btn-outline-dark mt-5 m-auto" disabled type="button" >Incluirme en la lista</button>
+        <button class="btn btn-light mt-5 m-auto" disabled type="button">Próximamente</button>
       </div>
     </div>
   </div>
@@ -240,16 +240,31 @@
     </div>
   </main>
 
-  <footer class="text-muted mt-2"> 
-    <div class="container py-5 text-center">
-      <p class="float-end small mb-1">
-        <a href="#">Ir arriba</a>
-      </p>
-      <p class="mb-0"><a href="../getting-started/introduction/">TKNar · 2021</a>.</p>
+  <footer class="text-muted mt-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center mt-5 mb-3">
+          <p class="text-white-50 luz">TKNar · 2021</p>
+          <span>
+            <a class="text-white-50 lead-4">ecosistema@tknar.ar</a>
+          </span>
+          <p id="contacto" class="m-3">
+            <a class="text-white-50 lead ms-0" href="https://www.instagram.com/tknar.ar/" arget="_blank">
+              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            </a> 
+            <a class="text-white-50 lead" href="https://twitter.com/TKNar_ar" target="_blank">
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            </a>
+          </p>
+          <div class="text-center">
+            <p class="float-end small me-4">
+              <a class="text-white-50" href="#"><i class="fa fa-arrow-up fa-2" aria-hidden="true"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
-
-
 
 
   <!-- Bootstrap JS -->

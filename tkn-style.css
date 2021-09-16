@@ -4,6 +4,12 @@ a {
 body {
     font-family:Oxanium ;
 }
+.luz {
+    color: #ffd000!important;
+}
+.azul {
+    color:#0008ec
+}
 
 .navbar .nav-link {
     letter-spacing: 0.10em;
@@ -42,3 +48,33 @@ border-left: 1px solid #2f2f2f;
     transition: ease-in .25s;
   }
 .img_term {width: 100%;height: auto;}
+
+.white_texto p {
+    margin-bottom: 1.2em;
+}
+#section_form {
+    background: url(i/olla_luz_2.png) no-repeat center left;
+    background-size: cover;
+    text-shadow: 0 2px 7px #000000;
+}
+#glosario_div {
+    background: url(i/circulos.png) no-repeat center center;
+    background-size: 100%;
+}
+#slide_genesis {
+    background: url(i/slide_genesis.png) no-repeat center center;
+    background-size: 100%;
+    text-shadow: 0 2px 7px #0000005c;
+
+}
+#slide_radar {
+    background: url(i/slide_radar.png) no-repeat center center;
+    background-size: 100%;
+    text-shadow: 0 2px 7px #0000005c;
+
+}
+.slides p {
+    font-size: 1.5em;
+    background-color: #0000007c;
+    padding: .5em;
+}
