@@ -74,6 +74,21 @@ border-left: 1px solid #2f2f2f;
     text-shadow: 0 2px 7px #0000005c;
 
 }
+@media screen and (max-width: 600px) {
+    #slide_genesis {
+        background-size: 1080px;    
+    }
+    #slide_radar {
+        background-size: 1080px;    
+    }
+    #glosario_div {
+        background-size: 1080px;
+    }
+    .carousel-indicators {display: none;}
+    .img_logo {margin-left: 45px;}
+    .slides{margin-top: 36px;}
+}
+
 .slides p {
     font-size: 1.5em;
     background-color: #0000007c;
