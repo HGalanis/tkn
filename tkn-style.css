@@ -7,6 +7,9 @@ body {
 .luz {
     color: #ffd000!important;
 }
+.azul {
+    color:#0008ec
+}
 
 .navbar .nav-link {
     letter-spacing: 0.10em;
