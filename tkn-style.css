@@ -16,7 +16,8 @@ body {
 }
 .navbar .nav-link:hover {
     color: #ffd000!important;
-    text-shadow: 0 0 40px #0000ee;
+    text-shadow: 0 2px 40px #3700ffa9;
+
 }
 .lead {
     font-size: 1.5rem;
@@ -87,4 +88,19 @@ border-left: 1px solid #2f2f2f;
     color: #ffd000!important;
     transition-timing-function:ease-in-out ;
     transition-duration: .7s;
+}
+.img_logo {
+    display: block;
+    height: 48px; 
+    width: 48px;
+    box-shadow: 0 0px 5px #00000045!important;
+    margin-top: -16px;
+    background-image: url(i/tkn_dark.png);
+    background-size: 48px 48px;
+}
+.img_logo:hover {
+    box-shadow: 0 2px 20px #3700ff78!important;
+    background-image: url(i/tkn_logo.png);
+    transition-timing-function:ease ;
+    transition-duration: .5s;
 }
