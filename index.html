@@ -68,18 +68,18 @@
     <div class="row text-white bg-dark">
 
       <!-- Jumbo -->
-    <section class="">
-        <div id="carouselExampleControls" class="carousel slide mx-5 mt-5 p-5 pb-3 rounded-3 shadow" data-bs-ride="carousel">
-          <div class="carousel-inner p-5 pb-2">
+    <section class="slides">
+        <div id="carouselExampleControls" class="carousel slide rounded-3 shadow m-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
       
-            <div class="carousel-item active" style="height: 240px;">
-              <div class="container">
+            <div id="slide_genesis" class="carousel-item p-5 active" style="min-height: 240px;">
+              <div class="container p-3">
                 <div class="row">
                   <div class="col-3">
                     <h1 class="display-5 ps-4"><b>TKN</b> Génesis</h1>
                   </div>
                   <div class="col-9">
-                    <p class="lead">TKN es un proyecto independiente que busca la formación de
+                    <p class="">TKN es un proyecto independiente que busca la formación de
                       una comunidad de artistas digitales.</p>
                       <span class="col-12">
                         <a class="btn btn-outline-light mt-2 ms-3" href="/whitepaper.html" type="button">Conocer Más</a>    
@@ -90,14 +90,14 @@
               </div>
             </div>
 
-            <div class="carousel-item" style="height: 240px;">
-              <div class="container">
+            <div id="slide_radar" class="carousel-item p-5" style="min-height: 240px;">
+              <div class="container p-3">
                 <div class="row">
                   <div class="col-3">
                     <h1 class="display-4 ps-4">RADar</h1>
                   </div>
                   <div class="col-9">
-                    <p class="lead">Estamos armando el directorio de artistas digitales
+                    <p class="">Estamos armando el directorio de artistas digitales
                       más importante del país.
                     </p>
                     <button class="btn btn-light mt-2 ms-3" type="button">Incluirme en la lista</button>                  
@@ -162,27 +162,27 @@
     </section>
     
     <!-- Whitepaper -->
-<section id="whitepaper" class="p-0">
-  <div class="container-fluid bg-secondary p-5">
-    <div class="row">
-      <div class="col-12 pt-3 text-center">
-        <p class="col-12 text-center">
-          <span class="me-2"> Para conocer más de nuestro proyecto</span>
-          <a class="btn btn-outline-light py-3 px-4 m-auto" type="button" href="/whitepaper.html">Leé nuestro Whitepaper</a>
-        </p>
+    <section id="whitepaper" class="p-0">
+      <div class="container-fluid bg-secondary p-5">
+        <div class="row">
+          <div class="col-12 pt-3 text-center">
+            <p class="col-12 text-center">
+              <span class="me-2"> Para conocer más de nuestro proyecto</span>
+              <a class="btn btn-outline-light py-3 px-4 m-auto" type="button" href="/whitepaper.html">Leé nuestro Whitepaper</a>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Glosario -->
     <section id="glosario">
-      <div class="container py-5 my-5">
+      <div  class="container py-5 my-5">
         <div class="row">
-          <div class="col-md-12">
+          <div id="glosario_div" class="col-md-12">
             <div class="p-5 text-white shadow rounded-3">
               <h2 class="text-center">Glosario</h2>
-                <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
+                <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-2">
 
                  
 
@@ -190,7 +190,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-12 d-flex">
-                    <button class="btn btn-outline-light mt-5 m-auto" type="button">Ver más definiciones</button>
+                    <a class="btn btn-outline-light mt-5 m-auto"  href="https://feriadearte.cordoba.gob.ar/paisajes-tecnopoeticos/" target=_blank type="button">Ver más definiciones</a>
                   </div>
                 </div>
               </div>
@@ -198,7 +198,7 @@
           </div>
         </div>
       </div>
-</section>
+    </section>
 
 <!-- Expansión -->
 <section id="expansion">
@@ -224,14 +224,14 @@
 </section>
 
 <!-- Formulario-->
-<section>
-  <div class="my-5 p-5 text-dark text-center bg-light border-bottom">
+<section id="section_form">
+  <div class="my-5 p-5 text-light text-center">
     <h1 class="display-5 fw-bold p-5 pb-2">Estamos armando <br> el directorio de artistas digitales <br> más
       importante del país</h1>
     <div class="col-lg-8 mx-auto">
-      <p class="text-muted mb-2">El registro estará disponible a partir del 18 de Septiembre de 2021</p>
+      <p class="text-light mb-3 lead fw-bold">El registro estará disponible a partir del 18 de Septiembre de 2021</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button class="btn btn-outline-dark mt-5 m-auto" disabled type="button">Incluirme en la lista</button>
+        <button class="btn btn-light mt-5 m-auto" disabled type="button">Próximamente</button>
       </div>
     </div>
   </div>
@@ -240,10 +240,10 @@
     </div>
   </main>
 
-  <footer class="text-muted mt-2">
+  <footer class="text-muted mt-3">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 text-center mb-4">
+        <div class="col-12 text-center mt-5 mb-3">
           <p class="text-white-50 luz">TKNar · 2021</p>
           <span>
             <a class="text-white-50 lead-4">ecosistema@tknar.ar</a>
@@ -265,8 +265,6 @@
       </div>
     </div>
   </footer>
-  
-  
 
 
   <!-- Bootstrap JS -->
