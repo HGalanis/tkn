@@ -64,13 +64,13 @@ border-left: 1px solid #2f2f2f;
 #slide_genesis {
     background: url(i/slide_genesis.png) no-repeat center center;
     background-size: 100%;
-    text-shadow: 0 2px 7px #000000;
+    text-shadow: 0 2px 7px #0000005c;
 
 }
 #slide_radar {
     background: url(i/slide_radar.png) no-repeat center center;
     background-size: 100%;
-    text-shadow: 0 2px 7px #000000;
+    text-shadow: 0 2px 7px #0000005c;
 
 }
 .slides p {
