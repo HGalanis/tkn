@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+  <title>TKNar</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bs5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+    @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@100;200;400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+
+    body {
+      font-family: Quicksand;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      background: #0c0b14;
+    }
+
+    #bg_tkn {
+      position: fixed;
+      z-index: -10;
+      top: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: #0c0b14;
+      filter: blur(.5px);
+    }
+
+    .tkn_logo {
+      width: 40px;
+      height: 40px;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+   
+    header {
+      width: 100%;
+    }
+
+    header nav a.nav-link {
+      text-transform: uppercase;
+      font-size: 0.85em;
+      font-weight: 200;
+      color: #00f4ab;
+    }
+    #contacto a {
+      color: #00f4ab;
+      text-shadow: 0px 3px 14px #0cc82265;
+      transition: ease-in-out 0.5s;
+    }
+    #contacto a:hover {
+      color: #0084ff!important;
+    }
+
+    .lead_tkn {
+      font-size: 1.2em;
+      color: aquamarine;
+    text-shadow: 0px 3px 14px #0cc821;
+    }
+    .form-control {
+      background-color: #212529;
+      background-clip: padding-box;
+      border: 1px solid #00f4ab;
+    }
+
+    .btn-search {
+      color: #00f4ab;
+      border: 1px solid #00f4ab;
+
+    }
+
+    .tkn-line {
+      display: block;
+      border-bottom: 2px solid #00f4ab75;
+      margin: 10px 0 10px;
+    }
+
+    footer {
+      width: 100%;
+      bottom: 10px;
+    }
+
+    footer a {
+      font-size: .85em;
+      color: #bbb;
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+<div id="bg_tkn"></div>
+
+<body class="d-flex h-100 text-center text-white">
+
+  <div id="tkn_page" class="d-flex w-100 h-100 mx-auto flex-column">
+    <header class="position-fixed mb-auto pt-4 px-5">
+      <div>
+        <div class="float-md-start mb-0 tkn_box_logo">
+          <a href=""><img class="tkn_logo" src="./imgs/tkn_neon.png"></a>
+        </div>
+        <nav class="d-none nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link" aria-current="page" href="#">ArtRooms</a>
+          <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            Community
+          </a>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="w-100 h-100">
+      <div id="tkn_home" class="d-flex flex-column align-items-center justify-content-center h-100">
+        <img class="tkn_full_logo" src="./imgs/tkn_full_neon.png" width="260px">
+        <div class="w-50 pb-5">         
+           <nav class="ms-3 mt-1 mb-4">
+           <span id="contacto" class="mb-0">
+              <a class="me-3" href="mailto:tknar.info@gmail.com">
+                <i class="bi bi-envelope-fill" style="font-size:2em;"></i>
+              </a>
+              <a class="me-3" href="https://www.instagram.com/tknar.ar/" arget="_blank">
+                <i class="bi bi-instagram" style="font-size:2em;"></i>
+              </a>
+              <a class="me-3" href="https://twitter.com/TKNar_ar" target="_blank">
+                <i class="bi bi-twitter" style="font-size:2em;"></i>
+              </a>
+            </span>
+          </nav>
+          <h1 class="d-none">TKN is a heart to ecosystem</h1>
+          <p class="lead_tkn">TKN es un proyecto social y pedagógico independiente que busca promover el arte y la tecnología blockchain entre artistas y creadores digitales.</p>
+
+
+          <div class="d-none mx-auto w-75 input-group mt-">
+            <input type="text" class="form-control" placeholder="Search projects, techniques or artists..."
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-search" type="button" id="button-addon2">Search</button>
+          </div>
+
+          <nav class="d-none nav mt-5 align-center">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modal_artrooms" class="nav-link ">
+              <i class="bi bi-dot"></i>
+              <span>View ArtRooms</span>
+            </a>
+            <a href="#tkn_artrooms" class="nav-link mx-5">
+              
+              <span>Know the Events</span>
+            </a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#modal_mint" class="nav-link ">
+              
+              <span>Mint your Art</span>
+            <i class="bi bi-dot"></i></a>
+          </nav>
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+    <!-- Modal Mint Your Art -->
+    <div class="modal fade" id="modal_mint" tabindex="-1" aria-labelledby="modal_mint" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen p-5">
+        <div class="modal-content bg-black">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">MINT YOUR ART</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Recursos para tokenizar tus creaciones
+            <div class="container-fluid text-center">
+              <div class="row g-2">
+                <div class="col-6">
+                  <div class="p-3 border border-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border border-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border border-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border border-light">Custom column padding</div>
+                </div>
+              </div>
+    
+              <div class="row g-2 py-2">
+                <div class="col-4">
+                  <div class="p-3 border border-light">Custom column padding</div>
+                </div>
+                <div class="col-4">
+                  <div class="p-3 border border-light">Custom column padding</div>
+                </div>
+                <div class="col-4">
+                  <div class="p-3 border border-light">Custom column padding</div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-primary">Create a ArtRoom</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+    
+    <!-- Modal ArtRooms -->
+    <div class="modal fade" id="modal_artrooms" tabindex="-1" aria-labelledby="modal_artrooms" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen p-5">
+        <div class="modal-content pt-3" style="background-color: transparent!important;">
+          <div class="modal-header px-4 border-0 bg-black">
+            <h5 class="modal-title" id="exampleModalLabel">ARTROOMS</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-black">
+            <span><h6>ARTE ARTE ARTE</h6></span>
+          </div>
+          <div class="modal-footer px-3 border-0 bg-black">
+            <button type="button" class="btn btn-outline-secondary">View all ArtRooms</button>
+            <button type="button" class="btn btn-outline-primary">Create a ArtRoom</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OffCanvas Menú -->
+    <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Menú</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-start">
+        <ul class="nav flex-column">
+          <li><a class="dropdown-item" href="#">RADar / Artist Directory</a></li>
+          <li><a class="dropdown-item" href="#">RADar / Nice NFT's Projects</a></li>
+          <li><a class="dropdown-item" href="#">RADar / LATAM Events</a></li>
+          <span class="tkn-line"></span>
+          <li><a class="dropdown-item" href="#">TKNar Academy / Glosárea </a></li>
+          <li><a class="dropdown-item" href="#">TKNar Academy / Tutorials </a></li>
+          <li><a class="dropdown-item" href="#">TKNar Academy / Courses </a></li>
+        </ul>
+        <ul class="nav flex-column">
+          <span class="tkn-line"></span>
+          <li><a class="dropdown-item" href="#">How to Collaborate / FAQs</a></li>
+          <span class="tkn-line"></span>
+          <li><a class="dropdown-item" href="#">Connect your Wallet</a></li>
+          <span class="tkn-line"></span>
+          <li><a class="dropdown-item" href="#">About Us / TKNar Project</a></li>
+          <li><a class="dropdown-item" href="#">Roadmap / TKNar Xpanse </a></li>
+          <li><a class="dropdown-item" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <footer class="position-fixed mt-auto text-white-50">
+    <nav class="mt-5 mb-3">
+      <a class="float-md-start text-white-50 ms-5">2023 · TKNar</a>
+      <a href="https://linktr.ee/TKN.ar">· Contactanos!</a>
+      <span id="contacto" class="float-md-end mb-0 me-5">
+        <a class="me-3" href="mailto:tknar.info@gmail.com">
+          <i class="bi bi-envelope-fill" style="font-size:1.25em;"></i>
+        </a>
+        <a class="me-3" href="https://www.instagram.com/tknar.ar/" arget="_blank">
+          <i class="bi bi-instagram" style="font-size:1.25em;"></i>
+        </a>
+        <a class="me-3" href="https://twitter.com/TKNar_ar" target="_blank">
+          <i class="bi bi-twitter" style="font-size:1.25em;"></i>
+        </a>
+      </span>
+    </nav>
+  </footer>
+
+  </div>
+
+</body>
+
+
+
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+<script src="./js/p5.min.js"></script>
+<script src="./js/vanta.topology.min.js"></script>
+<script>
+  VANTA.TOPOLOGY({
+    el: "#bg_tkn",
+    backgroundAlpha: 0x1,
+    backgroundColor: 0x0c0b14,
+    color: 0x00815b,
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+  })
+</script>
+
+
+</html>
